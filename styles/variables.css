@@ -1,4 +1,15 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+:root {
+	--color-pink-first: #ff0070;
+	--color-pink-second: #db00ff;
+	--color-pink-third-40: #ff007040;
+	--color-pink-fourth: #f1b2ce;
+	--color-pink-fifth: #ff8dcb;
+	--color-pink-sixth: #ffc2e6;
+
+	--color-dark-blue: #000028;
+	--color-grey: #353430;
+
+	--background-image: url('../images/cover-image-dark.png');
+	--font-family: 'IBM Plex mono', monospace;
+	--font-size: 18px;
+}

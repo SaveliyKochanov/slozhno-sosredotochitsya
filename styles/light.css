@@ -1,12 +1,33 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+	--background-image: url('../images/cover-image-light.png');
+	--title-color: var(--color-pink-sixth, #ffc2e6);
+	--header-text-color: var(--color-grey, #353430);
+	--decorated-color: var(--color-grey, #353430);
+	--decorated-color-40: var(--color-grey-40, #35343040);
+	--section-title-color: var(--color-grey, #353430);
+	--article-title-color: var(--color-grey, #353430);
+	--accent-color: var(--color-pink-fifth, #ff8dcb);
+	--text-color: var(--color-grey, #f1b2ce);
+}
+
+.page.theme_light .recording {
+	display: none;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--background-image: url('../images/cover-image-light.png');
+		--title-color: var(--color-pink-sixth, #ffc2e6);
+		--header-text-color: var(--color-grey, #353430);
+		--decorated-color: var(--color-grey, #353430);
+		--decorated-color-40: var(--color-grey-40, #35343040);
+		--section-title-color: var(--color-grey, #353430);
+		--article-title-color: var(--color-grey, #353430);
+		--accent-color: var(--color-pink-fifth, #ff8dcb);
+		--text-color: var(--color-grey, #f1b2ce);
+	}
+
+	.page.theme_light .recording {
+		display: none;
+	}
 }

@@ -1,12 +1,25 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+	--background-image: url('../images/cover-image-dark.png');
+	--title-color: var(--color-pink-second, #db00ff);
+	--header-text-color: var(--color-dark-blue, #000028);
+	--decorated-color: var(--color-pink-first, #ff0070);
+	--decorated-color-40: var(--color-pink-third-40, #ff007040);
+	--section-title-color: var(--color-pink-first, #ff0070);
+	--article-title-color: var(--color-dark-blue, #000028);
+	--accent-color: var(--color-pink-first, #ff0070);
+	--text-color: var(--color-pink-fourth, #f1b2ce);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background-image: url('../images/cover-image-dark.png');
+		--title-color: var(--color-pink-second, #db00ff);
+		--header-text-color: var(--color-dark-blue, #000028);
+		--decorated-color: var(--color-pink-first, #ff0070);
+		--decorated-color-40: var(--color-pink-third-40, #ff007040);
+		--section-title-color: var(--color-pink-first, #ff0070);
+		--article-title-color: var(--color-dark-blue, #000028);
+		--accent-color: var(--color-pink-first, #ff0070);
+		--text-color: var(--color-pink-fourth, #f1b2ce);
+	}
 }
