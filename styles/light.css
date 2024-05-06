@@ -1,5 +1,6 @@
 .page.theme_light {
 	--background-image: url('../images/cover-image-light.png');
+	--background-color: var(--color-pink-sixth, #ffc2e6);
 	--title-color: var(--color-pink-sixth, #ffc2e6);
 	--header-text-color: var(--color-grey, #353430);
 	--decorated-color: var(--color-grey, #353430);
@@ -17,6 +18,7 @@
 @media (prefers-color-scheme: light) {
 	:root {
 		--background-image: url('../images/cover-image-light.png');
+		--background-color: var(--color-pink-sixth, #ffc2e6);
 		--title-color: var(--color-pink-sixth, #ffc2e6);
 		--header-text-color: var(--color-grey, #353430);
 		--decorated-color: var(--color-grey, #353430);

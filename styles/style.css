@@ -222,9 +222,6 @@
 	row-gap: 16px;
 }
 
-.pictures-list__item {
-}
-
 .pictures-list__img {
 	object-fit: cover;
 	object-position: center;
