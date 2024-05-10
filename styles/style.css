@@ -305,10 +305,6 @@
 		max-inline-size: 236px;
 	}
 
-	.concentration-list {
-		grid-template-columns: none;
-	}
-
 	.section {
 		column-gap: 20px;
 	}
@@ -316,6 +312,7 @@
 	.concentration-list {
 		display: flex;
 		flex-direction: column;
+		grid-template-columns: none;
 	}
 }
 
