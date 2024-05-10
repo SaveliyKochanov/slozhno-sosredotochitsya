@@ -13,7 +13,7 @@
 	--focus-color: var(--color-pink-fourth, #353430);
 }
 
-.page.theme_light .recording {
+.recording {
 	display: none;
 }
 
@@ -31,7 +31,7 @@
 		--text-color: var(--color-grey, #f1b2ce);
 	}
 
-	.page.theme_light .recording {
+	.recording {
 		display: none;
 	}
 }

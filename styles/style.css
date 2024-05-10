@@ -87,6 +87,7 @@
 	padding: 0 13px;
 	background-color: inherit;
 	outline: none;
+	transition: 0.2s border-color ease-in;
 }
 
 .header__theme-menu-button:hover {
@@ -171,11 +172,21 @@
 	line-height: 23.45px;
 }
 
+.article__text:not(:last-of-type) {
+	margin-block-end: 10px;
+}
+
+.regular-title {
+	font-weight: 500;
+}
+
 .link {
 	cursor: pointer;
 	text-decoration: none;
 	color: var(--text-color, #f1b2ce);
 	text-shadow: 2px 1px 0 var(--accent-color, #ff0070);
+	border-bottom: 1px solid transparent;
+	transition: border-bottom 0.3s ease;
 }
 
 .link:hover {
@@ -275,7 +286,7 @@
 	text-shadow: 2px 2px 0 var(--accent-pink, #ff0070);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
 	.header__theme-menu {
 		justify-self: end;
 		margin-block-start: 173px;
@@ -301,12 +312,35 @@
 	.section {
 		column-gap: 20px;
 	}
+
+	.concentration-list {
+		display: flex;
+		flex-direction: column;
+	}
 }
 
-@media (max-width: 587px) {
+@media (max-width: 767px) {
+	.main {
+		padding-inline-start: 10px;
+		padding-inline-end: 10px;
+		padding-block-start: 40px;
+		padding-block-end: 40px;
+		row-gap: 50px;
+	}
+
+	.header__title,
+	.footer__title {
+		font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+	}
+
 	.header__theme-menu {
 		margin-block-start: 0;
 		align-self: center;
+	}
+
+	.header__text {
+		margin-block-end: 0;
+		inline-size: 100%;
 	}
 
 	.recording {
@@ -334,13 +368,16 @@
 		margin-inline-start: 0;
 	}
 
-	.header__text {
-		margin-block-end: 0;
-		inline-size: 100%;
-	}
-
 	.section {
 		grid-template-columns: none;
+	}
+
+	.section__title {
+		max-inline-size: 100%;
+	}
+
+	.pictures {
+		row-gap: 10px;
 	}
 
 	.pictures-list {
@@ -351,27 +388,5 @@
 
 	.pictures-list__img {
 		block-size: auto;
-	}
-}
-
-@media (max-width: 375px) {
-	.section__title {
-		max-inline-size: 100%;
-	}
-
-	.header__title {
-		font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-	}
-
-	.main {
-		padding-inline-start: 10px;
-		padding-inline-end: 10px;
-		padding-block-start: 40px;
-		padding-block-end: 40px;
-		row-gap: 50px;
-	}
-
-	.pictures {
-		row-gap: 10px;
 	}
 }
