@@ -237,13 +237,13 @@
 	row-gap: 20px;
 }
 
-.pictures-list {
+.pictures--grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 20px;
 }
 
-.pictures-list__img {
+.pictures__item {
 	object-fit: cover;
 	object-position: center;
 	inline-size: 100%;
