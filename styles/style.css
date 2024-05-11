@@ -375,16 +375,13 @@
 		margin-block-end: 50px;
 	}
 
-	.pictures {
-		margin-block-end: 0;
-	}
-
 	.section__title {
 		max-inline-size: 100%;
 	}
 
 	.pictures {
 		row-gap: 10px;
+		margin-block-end: 0;
 	}
 
 	.pictures-collage {
