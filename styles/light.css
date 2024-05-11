@@ -13,7 +13,7 @@
 	--focus-color: var(--color-pink-fourth, #353430);
 }
 
-.recording {
+.page.theme_light .recording {
 	display: none;
 }
 
@@ -29,6 +29,9 @@
 		--article-title-color: var(--color-grey, #353430);
 		--accent-color: var(--color-pink-fifth, #ff8dcb);
 		--text-color: var(--color-grey, #f1b2ce);
+		--hover-color: var(--color-pink-fourth, #353430);
+		--focus-color: var(--color-pink-fourth, #353430);
+		--recording-display: none;
 	}
 
 	.recording {

@@ -11,6 +11,10 @@
 	--text-color: var(--color-pink-fourth, #f1b2ce);
 }
 
+.page.theme_dark .recording {
+	display: block;
+}
+
 @media (prefers-color-scheme: dark) {
 	:root {
 		--background-color: url(--color-dark-blue, #000028);
@@ -23,5 +27,9 @@
 		--article-title-color: var(--color-dark-blue, #000028);
 		--accent-color: var(--color-pink-first, #ff0070);
 		--text-color: var(--color-pink-fourth, #f1b2ce);
+	}
+
+	.recording {
+		display: block;
 	}
 }
